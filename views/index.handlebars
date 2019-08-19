@@ -1,0 +1,49 @@
+<h1>Welcome to GoodBurger</h1>
+<h2>Home of the GoodBurger</h2>
+<h2>Can I take your order?</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="burg">I'll have a:</label>
+        <input type="text" id="burg" name="burger_name">
+    </div>
+
+    <div class="form-group">
+        <label for="devoured">For Here or to go?</label><br>
+
+        <input type="radio" name="devoured" value="0" checked>For Here!
+        <br>
+        <input type="radio" name="devoured" value="1">To go, you smell!
+    </div>
+
+    <button type="submit">Add Burger</button>
+</form>
+
+
+<h2>EAT ME!</h2>
+
+<ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    <p>{{id}}. {{burger_name}}
+        <span><button class="change-devour" data-id="{{id}}" data-newdevour=true>
+                {{#if devoured}}devoured!{{else}}Devour me!{{/if}}
+            </button></span>
+    </p>
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<h2>I'm not feeling so good....</h2>
+
+<ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    <p>{{id}}. {{burger_name}}
+        <span><button class="change-devour" data-id="{{id}}" data-newdevour=false>
+                {{#if devoured}}BLA$&#@!%GH{{else}}devour me!{{/if}}
+            </button></span>
+    </p>
+    {{/if}}
+    {{/each}}
+</ul>
