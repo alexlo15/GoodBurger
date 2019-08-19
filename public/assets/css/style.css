@@ -1,0 +1,31 @@
+body{
+    background-image: url("../img/goodburger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    font-size: 150%;
+    color: black;
+}
+
+button{
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 3px #f18900;
+}
+
+.left{
+    float: left;
+    border: #f18900 solid 4px;
+    background-color: rgba(255, 255, 255, 0.616);
+    padding: 10px;
+
+}
+
+.right{
+    float: right;
+    border: #f18900 solid 4px;
+    background-color: rgba(255, 255, 255, 0.616);
+    padding: 10px;
+}
