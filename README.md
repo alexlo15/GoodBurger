@@ -37,7 +37,7 @@ Website features:
 2. An amazing 90s theme
 
 
-![Burger](goodburger.jpg)
+![Burger](goodburger.JPG)
 
 
 ## License
